@@ -16,7 +16,7 @@ public class UserController {
 	}
 
 	public void putPassword(UserDTO user) {
-		userService.editPassword(user);
+		userService.updatePassword(user);
 	}
 	
 	public void deleteUser(UserDTO user) {
@@ -37,6 +37,10 @@ public class UserController {
 
 	public UserDTO getById(String id) {
 		return userService.searchId(id);	
+	}
+	
+	public int getCountSameName(String name) {
+		return userService.countSameName(name);
 	}
 
 	public UserDTO[] getByName(String name) {

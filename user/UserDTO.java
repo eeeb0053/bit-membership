@@ -1,9 +1,7 @@
 package user;
 
 public class UserDTO {
-	private String userid;
-	private String name;
-	private String password;
+	private String userid, name, password;
 	
 	public String getUserid() {
 		return userid;
